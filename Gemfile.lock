@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/MonkDev/monk-id-client.git
+  revision: 066e1d23aae5e99d7968e0334f672a3c36ba1e3b
+  specs:
+    monk-id-client (0.0.1)
+      json
+      typhoeus
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,6 +49,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffi (1.0.11)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.4)
@@ -62,7 +71,6 @@ GEM
     multi_json (1.3.6)
     pg (0.12.2)
     polyglot (0.3.3)
-    rMeetup (1.0)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -110,6 +118,9 @@ GEM
       less-rails (~> 2.2.2)
       railties (>= 3.1)
       therubyracer (~> 0.10.1)
+    typhoeus (0.4.2)
+      ffi (~> 1.0)
+      mime-types (~> 1.18)
     tzinfo (0.3.33)
     uglifier (1.2.5)
       execjs (>= 0.3.0)
@@ -121,8 +132,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  monk-id-client!
   pg (= 0.12.2)
-  rMeetup
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
   sqlite3
