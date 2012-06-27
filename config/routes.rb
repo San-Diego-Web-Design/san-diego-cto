@@ -1,5 +1,11 @@
 Sdcto::Application.routes.draw do
 
+  resources :friends
+
+  match 'become_a_friend' => 'friends#become_a_friend'
+
+  match 'login' => 'members#show_login', :as => :login
+
   get "home/index"
   match 'mission' => 'home#mission', :as => :mission
   match '/' => 'home#index'
